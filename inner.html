@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+      <!--Скопировала header c главной-->
+    <header class="main-header">
+      <nav class="main-navigation">
+        <!--Размеры логотипа писать для width? Если да, то какие?-->
+        <a class="main-header-logo" href="#">
+        <!--Что делать с двумя кавычками и как правильно назвать alt?-->
+          <img src="img/logo.svg" width="1" height="1" alt="Логотип "Седоны"">
+        </a>
+        <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="gallery.html">Фото и видео</a></li>
+            <li><a href="map.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <!--Где-то я потеряла h1 class="visually-hidden"-->
+        <!--Какая-то сложная штука с фильтрами
+        <section class="filters">
+            <form action="#" method="input">
+              <ul class="inner-structure">
+                <li>
+                   <p class="infrastructure">Инфраструктура:</p>
+                    <li><input type="checkbox" name="pool1" value="Pool">Бассейн<br></li>
+                    <li><input type="checkbox" name="parking1" value="Parking">Парковка<br></li>
+                    <li><input type="checkbox" name="wifi1" value="Wifi">WI-FI<br></li>
+                </li>
+                </ul>
+              <ul class="inner-accomodation-type">
+                <li>
+                   <p class="accomodation">Тип жилья:</p>
+                    <li><input type="checkbox" name="hotel1" value="hotel">Гостиница</li>
+                    <li><input type="checkbox" name="motel1" value="motel">Мотель</li>
+                    <li><input type="checkbox" name="apartment1" value="apartment">Апартаменты</li>
+                </li>
+               </ul>
+             <ul class="price">
+                 <li>
+                    <p>Стоимость в сутки (Р):</p> 
+                    <p>От 0 до 3000</p>
+                 </li>
+             </ul>
+             <button>Показать</button>
+             Найдено: 
+             Сортировка:
+             По цене:
+             По типу:
+             По рейтингу:
+            </section>-->  
+            <section class="catalog">
+                    <h2 class="visually-hidden">Список гостиниц</h2>
+                    <ul class="catalog-list">
+                    <li class="catalog-item">
+                        <h3>
+                          <a href="catalog-item.html">
+                            <span class="catalog-category">Amara Resort & Spa</span></a>
+                            <span class="catalog-item-title">Гостиница</span>
+                        </h3>
+                        <p class="catalog-item-image">
+                                <a href="catalog-item.html">
+                                  <img src="img/hotel-1.jpg" width="220" height="165" alt="Гостиница «Amara Resort & Spa»">
+                                </a>
+                              </p>
+                              <p class="catalog-item-price">
+                                <b>От 4900 ₽</b>
+                                <a class="button button-info" href="#">Подробнее</a>
+                                <a class="button button-book" href="#">Забронировать</a>
+                              </p>
+                              <!--Застряла с этой частью про звёздочки, без понятия-->
+                              <div class="rating-star"></div>
+                              <div class="raiting-total">Рейтинг: 8,5</div>
+                    </li>
+                    <li class="catalog-item">
+                            <h3>
+                              <a href="catalog-item.html">
+                                <span class="catalog-category">Desert Quail Inn</span></a>
+                                <span class="catalog-item-title">Мотель</span>
+                            </h3>
+                            <p class="catalog-item-image">
+                                    <a href="catalog-item.html">
+                                      <img src="img/hotel-2.jpg" width="220" height="165" alt="Мотель «Desert Quail Inn»">
+                                    </a>
+                                  </p>
+                                  <p class="catalog-item-price">
+                                    <b>От 3000 ₽</b>
+                                    <a class="button button-info" href="#">Подробнее</a>
+                                    <a class="button button-book" href="#">Забронировать</a>
+                                  </p>
+                                  <div class="rating-star"></div>
+                                  <div class="raiting-total">Рейтинг: 8,9</div>
+                        </li>
+                        <li class="catalog-item">
+                                <h3>
+                                  <a href="catalog-item.html">
+                                    <span class="catalog-category">Villas at Poco Diablo</span></a>
+                                    <span class="catalog-item-title">Апартаменты</span>
+                                </h3>
+                                <p class="catalog-item-image">
+                                        <a href="catalog-item.html">
+                                          <img src="img/hotel-3.jpg" width="220" height="165" alt="Мотель «Desert Quail Inn»">
+                                        </a>
+                                      </p>
+                                      <p class="catalog-item-price">
+                                        <b>От 2000 ₽</b>
+                                        <a class="button button-info" href="#">Подробнее</a>
+                                        <a class="button button-book" href="#">Забронировать</a>
+                                      </p>
+                                      <div class="rating-star"></div>
+                                      <div class="raiting-total">Рейтинг: 9,2</div>
+                            </li>
+    </main>
+    <footer class="main-footer">
+            <!--Непонятно как обозначить #hashtag и его функция-->
+            <p class="footer-hashtag"><a href="#"><b>#VISITSEDONA</b></a></p>
+            <div class="footer-social">
+                <b>Давайте дружить!</b>
+                <ul>
+                     <!--Как лучше написать название соц. сети на анг. или русском?-->
+                  <li><a class="social-button" href="#">Twitter</a></li> 
+                  <li><a class="social-button" href="#">Фейсбук</a></li>
+                  <li><a class="social-button" href="#">YouTube</a></li>
+                </ul>
+              </div>
+              <p class="footer-copyright">
+                <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+              </p>
+          </footer>
+    </body>
+</html>
+        
