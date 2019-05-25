@@ -8,7 +8,7 @@
    <header class="header">
   <nav class="main-navigation">
     <a class="header-logo" href="#">
-      <img src="img/logo.svg" width="1" height="1" alt="HTML Academy: «Седона»">
+      <img src="img/logo-sedona.svg" width="138" height="70" alt="HTML Academy: «Седона»">
     </a>
     <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
@@ -20,31 +20,71 @@
 </header>
 <main>
   <section class="main-banner">
+      <img src="img/intro-welcome.svg">
     <div class="hero-image">
      </div>
-  <h2>Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
-  <p></b>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</b></p>
-  </section>
-  <!--Блок Баннер + завлекалочка(если это один блок) скорее всего в <div>, но пока указано не резмечать-->
-  <!--Блок Баннер + красивые места(если это один блок) скорее всего в <div>, но пока указано не резмечать-->
-  <section class="main-interest">
+  <h1 class="visually-hidden">Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
+  <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
+    </section>
+    <section class="section-block">
+      <div>
+        <h2>Настоящий городок<h2>  
+        <span>— №1 —</span>
+         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+         <img src="img/hotel.jpg">
+        <ul>
+          <li>
+            <strong>Жильё</strong>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li>
+            <strong>Еда</strong>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li>
+            <strong>Сувениры</strong>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+       </ul> 
+    </section>
+    <section class="section-block reverce">
+        <h2>Там есть мост дюявола</h2> 
+         <p>— №2 —</p> 
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+             <img src="img/hotel.jpg">
+            <ul>
+              <li>
+                <p><strong>Небольшая площадь</strong></p>
+                  <p>— №3 —</p>
+                  <p>Все достопримечательности находятся очень близко</p></li>
+                  <li>
+                <p><strong>Красивая дорога</strong></p>
+                   <p>— №4 —</p>
+                   <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p></li>
+                  <li>
+                <p><strong>Мало туристов</strong></p>
+                   <p>— №5 —</p>
+                <p>Большинство едет в гранд каньон и толпится там</p></li>
+           </ul> 
+    </section>
+    <section class="main-interest">
     <h2>Заинтересовались?</h2>
     <p></b>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне  
     </b></p>
   </section>
   <section class="filters">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
-      <!-- Здесь будет форма 
-      <h3>Поиск гостиниц в Седоне</h3>
-      <form action="#" method="post">
+       <h3>Поиск гостиниц в Седоне</h3>
+  <form action="#" method="post">
         Дата заезда:
+        <img src="img/calendar.svg">
         Дата выезда:
+        <img src="img/calendar.svg">
         Взрослые:
         Дети:
         Найти
-      -->
-      <!-- Здесь будет карта 
-        <div id="googleMap" style="width:100%;height:400px;">
+  </form>
+      <div id="googleMap" style="width:100%; height:400px;">
         </div>
           <script>
             function myMap() {
@@ -55,12 +95,10 @@
          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
          }
           </script>
-          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-        -->          
-    </section>
+          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>       
+      </section>
 </main>
 <footer class="main-footer">
-  <!--Непонятно как обозначить #hashtag и его функция-->
   <p class="footer-hashtag" alt="Visit Sedona"><b>#VISITSEDONA</b></p>
   <div class="footer-social">
       <b>Давайте дружить!</b>
@@ -71,7 +109,10 @@
       </ul>
     </div>
     <p class="footer-copyright">
-      <b>Разработано:</b><a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      <b>WEBSITE BY:</b>
+      <a class="" href="https://htmlacademy.ru"> HTML Academy
+        <img src="img/logo-htmlacademy.svg" width="149" height="40" alt="HTML Academy logo">
+      </a>
     </p>
 </footer>
 </body>
