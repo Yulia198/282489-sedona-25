@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Yulia Mozharovskaya](https://up.htmlacademy.ru/htmlcss/25/user/282489).
-* Наставник: [Максим Корелин](https://htmlacademy.ru/profile/maxzbest).
+* Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
 
 ---
 
