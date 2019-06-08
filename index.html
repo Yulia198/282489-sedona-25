@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" heref="#">
   </head>
   <body>
    <header class="header">
-  <nav class="main-navigation">
-    <a class="header-logo" href="#">
+    <nav class="main-navigation">
+     <a class="header-logo" href="img/logo.jpg">
       <img src="img/logo-sedona.svg" width="138" height="70" alt="HTML Academy: «Седона»">
     </a>
     <ul class="site-navigation">
@@ -19,106 +22,143 @@
   </nav>
 </header>
 <main>
-  <section class="main-banner">
-      <img src="img/intro-welcome.svg">
+  <section class="promo">
+      <img src="img/intro-welcome.svg" alt="Welcome to gorgeous sedona" width="458" height="352">
     <div class="hero-image">
      </div>
-  <h1 class="visually-hidden">Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
-  <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
-    </section>
-    <section class="section-block">
+    <div> 
+  <h2 class="features-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+  <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+</div>    
+</section>
+  <section class="section-block">
       <div class="city-description">
-        <h2>Настоящий городок</h2>  
+        <h3>Настоящий городок</h3>  
         <span>— №1 —</span>
          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
-      <div class="hotel-sedona">
-        <img src="img/hotel.jpg">
-      </div>   
-        <ul>
+      <div class="hotel-sedona" alt="Виды Седоны" width="800" height="256">
+        <img src="img/hotel.jpg" width="800" height="256" alt="Красивый вид">
+      </div>
+    </section>
+    <section class="some-advantages">
+      <div class="advantages-items"> 
+        <div class="advantages-pictures"> 
+         <ul>
           <li>
-            <strong>Жильё</strong>
+            <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li>
-            <strong>Еда</strong>
+            <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li>
-            <strong>Сувениры</strong>
+            <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
        </ul> 
     </section>
     <section class="section-block reverse">
-        <h2>Там есть мост дюявола</h2> 
+      <div>
+        <h3>Там есть мост дьявола</h3> 
          <span>— №2 —</span> 
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-             <img src="img/hotel.jpg">
+             <img src="img/canyon.jpg">
+      </div>
+      <div class="advantages-pictures2">
             <ul>
               <li>
-                <p><strong>Небольшая площадь</strong></p>
+                <h3>Небольшая площадь</h3>
                 <span>— №3 —</span> 
                   <p>Все достопримечательности находятся очень близко</p></li>
                   <li>
-                <p><strong>Красивая дорога</strong></p>
+                <h3>Красивая дорога</h3>
                  <span>— №4 —</span> 
                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p></li>
                   <li>
-                <p><strong>Мало туристов</strong></p>
+                <h3>Мало туристов</h3>
                 <span>— №5 —</span> 
                 <p>Большинство едет в гранд каньон и толпится там</p></li>
            </ul> 
+          </div>
     </section>
-    <section class="main-interest">
-    <h2>Заинтересовались?</h2>
-    <p></b>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне  
-    </b></p>
+    <section class="search">
+    <h2 class="search-title">Заинтересовались?</h2>
+    <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне  
+    </p>
   </section>
   <section class="filters">
-      <h2 class="visually-hidden">Фильтр гостиниц</h2>
-       <h3>Поиск гостиниц в Седоне</h3>
-  <form action="#" method="post">
-        Дата заезда:
-        <img src="img/calendar.svg">
-        Дата выезда:
-        <img src="img/calendar.svg">
-        Взрослые:
-        Дети:
-        Найти
-  </form>
-      <iframe src="https://www.google.com/maps/embed?pb=" width="800" height="600" frameborder="0" style="border:0" allowfullscreen>
-      </iframe>
-      <div id="googleMap" style="width:100%; height:400px;">
+  <div class="search-form-container">
+      <a class="search-btn" href="#">Поиск гостиницы в Седоне</a>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-line clearfix">
+          <label for="day-in">Дата заезда:</label>
+          <input class="date field" type="text" id="day-in" name="in" placeholder="24 апреля 2017" required="">
+          <div class="icon-calendar"></div>
         </div>
-          <script>
-            function myMap() {
-            var mapProp= {
-            center:new google.maps.LatLng(51.508742,-0.120850),
-            zoom:5,
-            };
-         var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-         }
-          </script>
-          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>       
-      </section>
+        <div class="form-line clearfix">
+          <label for="day-out">Дата выезда:</label>
+          <input class="date field" type="text" id="day-out" name="out" placeholder="4 июля 2017">
+          <div class="icon-calendar"></div>
+        </div>
+        <div class="form-line clearfix">
+          <div class="half-width">
+            <label for="adult">Взрослые:</label>
+            <div class="unit-container">
+              <button class="btn minus-btn" type="button">
+                <i class="icon-minus"></i>
+              </button>
+              <input class="unit field" type="text" name="adults" id="adult" value="2" required="">
+              <button class="btn plus-btn" type="button">
+                <i class="icon-plus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="half-width">
+            <label for="kid">Дети:</label>
+            <div class="unit-container clearfix">
+              <button class="btn minus-btn" type="button">
+                <i class="icon-minus"></i>
+              </button>
+              <input class="unit field" type="text" name="kids" id="kid" value="0">
+              <button class="btn plus-btn" type="button">
+                <i class="icon-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="find-btn" type="button"><span>Найти</span></button>
+      </form>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта города Седона</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
+      <img class="map__image" src="img/map.jpg" width="1200" height="593" alt="Карта города Седона">
 </main>
 <footer class="main-footer">
-  <p class="footer-hashtag" alt="Visit Sedona"><b>#VISITSEDONA</b></p>
-  <div class="footer-social">
-      <b>Давайте дружить!</b>
-      <ul>
-        <li><a class="social-button" href="#">Twitter</a></li> 
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">YouTube</a></li>
-      </ul>
-    </div>
-    <p class="footer-copyright">
-      <b>WEBSITE BY:</b>
-      <a class="" href="https://htmlacademy.ru"> HTML Academy
-        <img src="img/logo-htmlacademy.svg" width="149" height="40" alt="HTML Academy logo">
-      </a>
-    </p>
-</footer>
-</body>
-</html>
+    <p class="footer-hashtag" alt="Visit Sedona"><b>#VISITSEDONA</b></p>
+    <div class="footer-social">
+        <b>Давайте дружить!</b>
+        <ul class="social">
+          <li><a class="social-button social-item-tw" href="#">
+              <div class="visually-hidden">Twitter</div>
+    //картинка? как её вставлять?
+            </a>
+        </li> 
+          <li><a class="social-button social-item-fb" href="#">
+              <div class="visually-hidden">Facebook</div>
+             </a>
+          </li>
+          <li><a class="social-button" href="#">YouTube</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Website by</b><a href="https://htmlacademy.ru"></a>HTML Academy</a>
+      </p>
+      <p class="visually-hidden">HTML Academy</p>
+      <svg></svg>
+  </footer>
+  </body>
+  </html>

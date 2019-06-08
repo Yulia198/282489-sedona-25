@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+   <meta charset="utf-8">
+   <title>HTML Academy: Поиск жилья в городе Седона</title>
+   <link rel="stylesheet" href="#">
+   <link rel="stylesheet" href="#">
+   <link rel="" href="">
   </head>
   <body>
-   <header class="header">
+   <header class="main-header">
   <nav class="main-navigation">
-    <a class="header-logo" href="#">
-      <img src="img/logo-sedona.svg" width="50" height="50" alt="HTML Academy: «Седона»">
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
     </a>
     <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
@@ -18,30 +21,52 @@
     </ul>
   </nav>
 </header>
+
     <main>
       <section class="filters">
-        <form action="#" method="input">
-         <ul class="inner-structure">
-          <li>
-          <p class="infrastructure">Инфраструктура:</p>
-          <li><input type="checkbox" name="pool1" value="Pool">Бассейн</li>
-          <li><input type="checkbox" name="parking1" value="Parking">Парковка</li>
-          <li><input type="checkbox" name="wifi1" value="Wifi">WI-FI</li>
-          </li>
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="input">
+         <fieldset class="filters-structure">
+         <legend>Инфраструктура:</legend>
+          <ul class="inner-structure">
+            <li class="filters-option">
+              <input class="visually-hidden filters-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li class="filters-option">
+                <input class="visually-hidden filters-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking" name="parking" value="Parking">Парковка</label>                 
+            </li>
+            <li class="filters-option">
+                <input class="visually-hidden filters-input-checkbox" type="checkbox" name="WI-FI" id="filter-wifi">
+                <label for="filter-wifi">Парковка</label>
+            </li>
          </ul>
-         <ul class="inner-accomodation-type">
-                <li>
-                   <p class="accomodation">Тип жилья:</p>
-                    <li><input type="checkbox" name="hotel1" value="hotel">Гостиница</li>
-                    <li><input type="checkbox" name="motel1" value="motel">Мотель</li>
-                    <li><input type="checkbox" name="apartment1" value="apartment">Апартаменты</li>
-                </li>
-               </ul>
+         </fieldset>
+         <fieldset class="filters-house-type">
+                <legend>Тип жилья:</legend>
+                <ul>
+                  <li class="filters-option">
+                    <input class="visually-hidden filters-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                    <label for="filter-hotel">Гостиница</label>
+                  </li>
+                  <li class="filters-option">
+                    <input class="visually-hidden filters-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                    <label for="filter-motel">Мотель</label>
+                  </li>
+                  <li class="filters-option">
+                    <input class="visually-hidden filters-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                    <label for="filter-apartments">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+        <fieldset class="filters-price-range">
+           <label class="filter-range-title">Стоимость в сутки (Р):</label>      
              <ul class="price">
-                 <li>
-                    <p>Стоимость в сутки (Р):</p> 
-                    <p>От 0 до 3000</p>
-                 </li>
+                <div class="price-controls">
+                   <label class="min-price">от 0<input type="text" name="min-price" value="0"></label>
+                   <label class="max-price">до 3000<input type="text" name="max-price" value="3000"></label>
+                </div>
+                </li>
              </ul>
              <button>Показать</button>
              Найдено: 
@@ -81,7 +106,7 @@
                             </h3>
                             <p class="catalog-item-image">
                                     <a href="catalog-item.html">
-                                      <img src="img/hotel-2.jpg" width="220" height="165" alt="Мотель «Desert Quail Inn»">
+                                      <img src="img/hotel-2.jpg" width="135" height="90" alt="Мотель «Desert Quail Inn»">
                                     </a>
                                   </p>
                                   <p class="catalog-item-price">
@@ -100,7 +125,7 @@
                                 </h3>
                                 <p class="catalog-item-image">
                                         <a href="catalog-item.html">
-                                          <img src="img/hotel-3.jpg" width="220" height="165" alt="Мотель «Desert Quail Inn»">
+                                          <img src="img/hotel-3.jpg" width="135" height="90" alt="Мотель «Desert Quail Inn»">
                                         </a>
                                       </p>
                                       <p class="catalog-item-price">
@@ -112,19 +137,29 @@
                                       <div class="raiting-total">Рейтинг: 9,2</div>
                             </li>
     </main>
+
     <footer class="main-footer">
         <p class="footer-hashtag" alt="Visit Sedona"><b>#VISITSEDONA</b></p>
         <div class="footer-social">
             <b>Давайте дружить!</b>
-            <ul>
-              <li><a class="social-button" href="#">Twitter</a></li> 
-              <li><a class="social-button" href="#">Facebook</a></li>
+            <ul class="social">
+              <li><a class="social-button social-item-tw" href="#">
+                  <div class="visually-hidden">Twitter</div>
+        //картинка? как её вставлять?
+                </a>
+            </li> 
+              <li><a class="social-button social-item-fb" href="#">
+                  <div class="visually-hidden">Facebook</div>
+                 </a>
+              </li>
               <li><a class="social-button" href="#">YouTube</a></li>
             </ul>
           </div>
           <p class="footer-copyright">
-            <b>Разработано:</b><a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+            <b>Website by</b><a href="https://htmlacademy.ru"></a>HTML Academy</a>
           </p>
+          <p class="visually-hidden">HTML Academy</p>
+          <svg></svg>
       </footer>
       </body>
       </html>
