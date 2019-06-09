@@ -3,9 +3,9 @@
   <head>
    <meta charset="utf-8">
    <title>HTML Academy: Поиск жилья в городе Седона</title>
-   <link rel="stylesheet" href="#">
-   <link rel="stylesheet" href="#">
-   <link rel="" href="">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+   <link href="css/normalize.txt" rel="stylesheet">
+   <link  href="css/style.css" rel="stylesheet">
   </head>
   <body>
    <header class="main-header">
@@ -17,7 +17,7 @@
         <li><a href="info.html">Информация</a></li>
         <li><a href="gallery.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+        <li><a href="inner.html">Гостиницы</a></li>
     </ul>
   </nav>
 </header>
@@ -59,22 +59,21 @@
                   </li>
                 </ul>
               </fieldset>
-        <fieldset class="filters-price-range">
-           <label class="filter-range-title">Стоимость в сутки (Р):</label>      
-             <ul class="price">
-                <div class="price-controls">
-                   <label class="min-price">от 0<input type="text" name="min-price" value="0"></label>
-                   <label class="max-price">до 3000<input type="text" name="max-price" value="3000"></label>
-                </div>
-                </li>
-             </ul>
-             <button>Показать</button>
-             Найдено: 
-             Сортировка:
-             По цене:
-             По типу:
-             По рейтингу:
-            </section>-->  
+              <div class="filter-range">
+                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                      <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                      <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                    </div>
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <button class="btn-transparent" type="submit">Показать</button>
+                  </div>
             <section class="catalog">
                     <h2 class="visually-hidden">Список гостиниц</h2>
                     <ul class="catalog-list">
