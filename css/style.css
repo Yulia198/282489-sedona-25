@@ -1,24 +1,15 @@
 body {
+  fonts 700 400
+
     margin: 0;
     padding: 0;
-}
-body {
     font-weight: 400;
     font-family: "PT Sans", Arial, sans-serif;
-  
-    background: #2a3e45; /* для демо */
-  }
-  body {
-    font-weight: 400;
-    font-family: "PT Sans", Arial, sans-serif;
-  
-    background: #2a3e45; /* для демо */
-  }
+      }
   
   .filter-range {
     width: 330px;
-    margin: 50px auto; /* для демо */
-  
+    margin: 50px auto;
     color: #ffffff;
     text-transform: uppercase;
   }
