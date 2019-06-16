@@ -1,142 +1,263 @@
+html {
+  background-color: #f2f2f2;
+}
 body {
-  fonts 700 400
-
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-    font-family: "PT Sans", Arial, sans-serif;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700 400;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff
       }
-  
-  .filter-range {
-    width: 330px;
-    margin: 50px auto;
-    color: #ffffff;
-    text-transform: uppercase;
+
+a {
+  text-decoration: none;
   }
-  
-  .filter-range-title {
-    margin-bottom: 9px;
-  
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
-  }
-  
-  .price-controls {
-    position: relative;
-    
-    height: 36px;
-    margin-bottom: 20px;
-    
-    font-size: 0;
-  
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-  }
-  
-  .price-controls::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  
-    width: 2px;
-    height: 22px;
-  
-    background: #ffffff;
-    transform: translate(-50%, -50%);
-  }
-  
-  .price-controls label {
-    display: inline-block;
-  
-    font-size: 14px;
-    line-height: 38px;
-    vertical-align: top;
-  
-    cursor: pointer;
-  }
-  
-  .price-controls .min-price,
-  .price-controls .max-price {
-    width: 90px;
-    padding-left: 65px;
-  }
-  
-  .price-controls input {
-    width: 50px;
-    margin: 0;
-  
-    color: inherit;
-    font: inherit;
-  
-    background: none;
-    border: none;
-  }
-  
-  .range-controls {
-    position: relative;
-  
-    margin-bottom: 32px;
-  }
-  
-  .range-controls .scale {
-    height: 2px;
-  
-    background: rgba(255, 255, 255, 0.3);
-  }
-  
-  .range-controls .bar {
-    width: 80%;
-    height: 2px;
-  
-    background: #ffffff;
-  }
-  
-  .range-toggle {
-    position: absolute;
-    top: -9px;
-    
-    width: 4px;
-    height: 4px;
-  
-    background: #ababab;
-    border: 8px solid #ffffff;
-    border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    cursor: pointer;
-  }
-  
-  .range-toggle:hover {
-    background: #1c4f80;
-  }
-  
-  .range-toggle-min {
-    left: 0;
-  }
-  
-  .range-toggle-max {
-    left: 80%;
-  }
-  
-  .btn-transparent {
-    display: block;
-    margin: 0 auto;
-    padding: 6px 35px;
-  
-    font-size: 14px;
-    line-height: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
-  
-    background: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    cursor: pointer;
-  }
-  
-  .btn-transparent:hover {
+
+  .site-navigation a {
     color: #000000;
-  
-    background: #ffffff;
   }
+
+  .site-navigation a:hover,
+  .site-navigation a:focus {
+    color: #81b3d2;
+  }
+
+  .site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+img {
+  max-width: 100%;
+    }  
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+
+  }
+.site-navigation {
+  width: 1056px;
+  padding: 0;
+  margin: 0;
+}
+.site-nav-item {
+  width: 241px;
+  margin-top: 14px;
+}
+
+.header-logo {
+    left: 50%;
+    top: 0;
+    width: 138px;
+    height: 70px;
+}
+.promo {
+  min-height: 508px;
+  margin-bottom: 60px;
+  background-color: #4c7899;
+  background-image: url("../img/background-mask.svg"), url("../img/slogan.svg"), url("../img/background-main.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center 77px, center top;
+}
+.visually-hidden {
+ /*no idea, help me, please!*/
+}
+
+.button {
+    text-align: center;
+  }
+
+
+.main-header {
+    min-height: 56px;
+  }
+img {
+  max-width: 100%;
+  height: auto;
+      }
+
+.features {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.features-title {
+  width: 576px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+}
+
+.features-list {
+    list-style: none;
+}
+.feature-item h3 {
+
+}
+.some-advantages, .some-advantages2 {
+  text-align: center;
+    }   
+.city-description,
+.city-attraction {
+  color: #ffffff;
+  background-color:#4c7899;
+  text-align: center;
+  
+}   
+/*  filters from demo for inner page*/
+.filters {
+  color: #ffffff;
+  background-color: #3f4b51;
+  background-image: url("../img/background-inner.jpg");
+/**/
+.filters-form {
+  width: 1056px;
+  padding: 27px 0 6px;
+  margin: 0;
+}
+
+.filters-form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.filters-form label {
+  cursor: pointer;
+}
+
+}
+.filter-range {
+        width: 330px;
+        margin: 
+        color: #ffffff;
+        text-transform: uppercase;
+      }   
+.filter-range-title {
+       margin-bottom: 9px;     
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+      }
+      
+.price-controls {
+        position: relative;     
+        height: 36px;
+        margin-bottom: 20px;
+        font-size: 0;   
+        border: 2px solid #ffffff;
+        border-radius: 2px;
+      }
+
+.price-controls::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      
+        width: 2px;
+        height: 22px;
+      
+        background: #ffffff;
+        transform: translate(-50%, -50%);
+      }
+      
+ .price-controls label {
+        display: inline-block;
+      
+        font-size: 14px;
+        line-height: 38px;
+        vertical-align: top;
+      
+        cursor: pointer;
+      }
+      
+      .price-controls .min-price,
+      .price-controls .max-price {
+        width: 90px;
+        padding-left: 65px;
+      }
+      
+      .price-controls input {
+        width: 50px;
+        margin: 0;
+      
+        color: inherit;
+        font: inherit;
+      
+        background: none;
+        border: none;
+      }
+      
+      .range-controls {
+        position: relative;
+      
+        margin-bottom: 32px;
+      }
+      
+      .range-controls .scale {
+        height: 2px;
+      
+        background: rgba(255, 255, 255, 0.3);
+      }
+      
+      .range-controls .bar {
+        width: 80%;
+        height: 2px;
+      
+        background: #ffffff;
+      }
+      
+      .range-toggle {
+        position: absolute;
+        top: -9px;
+        
+        width: 4px;
+        height: 4px;
+      
+        background: #ababab;
+        border: 8px solid #ffffff;
+        border-radius: 50%;
+        box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+        cursor: pointer;
+      }
+      
+      .range-toggle:hover {
+        background: #1c4f80;
+      }
+      
+      .range-toggle-min {
+        left: 0;
+      }
+      
+      .range-toggle-max {
+        left: 80%;
+      }
+      
+      .btn-transparent {
+        display: block;
+        margin: 0 auto;
+        padding: 6px 35px;
+      
+        font-size: 14px;
+        line-height: 20px;
+        color: #ffffff;
+        text-transform: uppercase;
+      
+        background: transparent;
+        border: 2px solid #ffffff;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+      
+      .btn-transparent:hover {
+        color: #000000;
+      
+        background: #ffffff;
+      }*/
+/*map*/
+  .map iframe {
+
+    }
+     /*footer*/
